@@ -1,0 +1,20 @@
+{
+  "name": "ddev",
+  "version": "1.0.0",
+  "description": "Mi sitio web Personal",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adan Uri Plata @distorDev <adanuriplata@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+<aside>
+  {% for fact in facts | randomItem %}
+    <p>{{ fact }}</p>
+  {% endfor %}
+</aside>
+<article>{{ content | safe }}</article>
