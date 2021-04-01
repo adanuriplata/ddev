@@ -4,15 +4,22 @@
   "description": "Mi sitio web Personal",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
+    "start": "npm run build:clean && npm run build:css && eleventy  --serve",
+    "build:clean": "rimraf public",
+    "build:css": "postcss src/assets/css/style.css -o public/assets/css/style.css",
+    "eleventy": "eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Adan Uri Plata @distorDev <adanuriplata@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "rimraf": "^2.7.1",
+    "tailwindcss": "^2.0.4"
   },
   "dependencies": {
     "axios": "^0.21.1"
