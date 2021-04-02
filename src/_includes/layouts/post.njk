@@ -1,8 +1,8 @@
 ---
-layout: base.njk
+layout: base
 ---
 <aside>
-  {% for fact in facts | randomItem %}
+  {% for fact in facts %}
     <p>{{ fact }}</p>
   {% endfor %}
 </aside>

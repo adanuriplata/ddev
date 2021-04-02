@@ -1,20 +1,33 @@
+// const aspectRatio = require('@tailwindcss/aspect-ratio');
+// const forms = require('@tailwindcss/forms');
+// const lineClamp = require('@tailwindcss/line-clamp');
+// const typography = require('@tailwindcss/typography');
+// const ui = require('@tailwindcss/ui')({
+  // layout: 'sidebar',
+// });
+
+// const defaultTheme = require('tailwindcss/defaultTheme');
+//  const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
-  purge: [
-    './src/**/*.html',
-     './src/**/*.js',
-  ],
+  purge: {
+    enabled: false,
+    content: ['./src/**/*.html',
+    './src/**/*.njk',
+    './src/**/*.md',
+    './src/_data/colors.js',
+    './src/_data/globals.js',]
+  },
   darkMode: false, // or 'media' or 'class'
+
   theme: {
     extend: {
-      fontFamily: {
-        mono: [
-          '"Fira Mono"',
-        ],
-        sans: [
-          'Monserrat',
-          'DotGothic16',
-          'Arial',
-        ],
+      // screens: defaultTheme.screens,
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
       },
       colors: {
         // My Colors
@@ -31,10 +44,48 @@ module.exports = {
         oldlace: '#fff6e9',
         'orange-hot': '#9b6f37',
       },
+      spacing: {
+        '32-lite': '7rem',
+      },
+      fontFamily: {
+        mono: [
+          '"Fira Mono"',
+        ],
+        sans: [
+          'Montserrat',
+          'DotGothic16',
+          'Arial',
+          'sans-serif',
+
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Noto Sans"',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+      },
+      opacity: {
+        0: '0',
+        25: '0.25',
+        50: '0.5',
+        75: '0.75',
+
+        // One more ...
+        90: '0.90',
+
+        100: '1',
+      },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-}
+  variants: {},
+  plugins: [
+    // aspectRatio,
+    // forms,
+    // lineClamp,
+    // typography,
+   ],
+};
