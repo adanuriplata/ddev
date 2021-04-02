@@ -1,0 +1,34 @@
+[
+	{
+		"platform": "### Comment: Make sure to add SVG icon in /assets/svg with same name as 'platform' ###",
+		"url": ""
+	},
+	{
+		"platform": "dribbble",
+		"url": ""
+	},
+	{
+		"platform": "github",
+		"url": "https://github.com/adanuriplata"
+	},
+	{
+		"platform": "instagram",
+		"url": "https://www.instagram.com/distordev/"
+	},
+	{
+		"platform": "linkedin",
+		"url": "https://www.linkedin.com/in/adanuriplata/"
+	},
+	{
+		"platform": "rss",
+		"url": ""
+	},
+	{
+		"platform": "twitter",
+		"url": "https://twitter.com/DistorDev"
+	},
+	{
+		"platform": "youtube",
+		"url": ""
+	}
+]

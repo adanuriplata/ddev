@@ -1,5 +1,5 @@
 ---
-title: Segundo Post 
+title: Segundo Post
 ---
 
 ## Hola

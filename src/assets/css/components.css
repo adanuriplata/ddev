@@ -192,3 +192,8 @@
 }
 
 /* Estaba en la version anterior de de tailwind asi que la copie y la puse aqui*/
+
+
+.dd-svg-fill {
+  fill: rgba(204, 214, 246, var(--tw-text-opacity));
+}

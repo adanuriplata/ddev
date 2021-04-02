@@ -1,6 +1,17 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  
+
   eleventyConfig.addPassthroughCopy("./src/assets/img");
+  eleventyConfig.addPassthroughCopy("./src/assets/svg");
+  eleventyConfig.addPassthroughCopy({
+    './node_modules/alpinejs/dist/alpine.js': './js/alpine.js',
+  });
   eleventyConfig.addWatchTarget("./src/assets/");
+
 
   // eleventyConfig.addFilter("randomItem", (arr) => {
   //     arr.sort(() => {
