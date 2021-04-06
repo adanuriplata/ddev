@@ -1,0 +1,36 @@
+---
+title: Formacion Academica
+layout: page
+eleventyNavigation: 
+  key: main 
+  title: Formación y Cursos 
+  order: 3
+seo:
+  title: Formación y Cursos 
+  description: Me encuentro en constante aprendizaje, estos son los ultimos cursos que he tomado.
+  siteImage: aqui/la(imagen)
+---
+
+<section class="py-20 md:py-24">
+  <div class="mx-auto px-3 sm:px-8 py-2 text-center">
+    <div class="text-center max-w-lg mx-auto mt-6">
+      <h2 class="text-green-ddev font-mono">> <span class="text-white-l-ddev text-2xl py-2" style="font-family: 'DotGothic16';">Educación Continua</span></h2>
+      <p class="">La tecnologia es la industria que mas rapido avanza, cambia y mejora. El ser un profesional en tecnologia exige hacer de la educación continua un habito y parte de nuestro tarbajo diario.</p>
+      <p class="">Aqui encontraras ultimos cursos que he tomado.</p>
+    </div>
+    <div class="mx-auto py-20">
+      <h2 class="text-left" style="font-family: 'DotGothic16';">Desarrollo Web</h2>
+      <div class="mx-auto max-w-screen-xl py-4 px-4 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
+      {% set certType = 'dev' %} {#select certificatedType dev mkt ent #}
+      {% include "components/cert.njk" %}
+      </div>
+    </div>
+    <div class="mx-auto py-20">
+      <h2 class="text-left" style="font-family: 'DotGothic16';">Growth Marketing</h2>
+      <div class="mx-auto max-w-screen-xl py-4 px-4 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
+      {% set certType = 'mkt' %}
+      {% include "components/cert.njk" %}
+      </div>
+    </div>
+  </div>
+</section>

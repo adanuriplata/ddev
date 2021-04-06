@@ -1,0 +1,26 @@
+{
+    "dev" : [
+      {
+        "name": "Fundamentos de Javascript",
+        "url": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
+        "img": "fundamentosdejavascript.jpeg"
+      },
+      {
+        "name": "Fundamentos de Javascript",
+        "url": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
+        "img": "fundamentosdejavascript.jpeg"
+      },
+      {
+        "name": "Programación orientada a objetos con PHP",
+        "url": "https://platzi.com/p/adanuriplata/curso/2034-php-poo/diploma/detalle/",
+        "img": "diploma-php-poo.jpeg"
+      }
+    ],
+    "mkt" : [
+      {
+        "name": "Certificación de Publicidad en Búsqueda de Google Ads",
+        "url": "https://skillshop.exceedlms.com/student/award/28155464",
+        "img": "googleads.jpeg"
+      }
+    ]
+  }

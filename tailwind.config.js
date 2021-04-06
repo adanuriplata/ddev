@@ -11,7 +11,7 @@
 
 module.exports = {
   purge: {
-    enabled: true,
+    enabled: false,
     content: ['./src/**/*.html',
     './src/**/*.njk',
     './src/**/*.md',
