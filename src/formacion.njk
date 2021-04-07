@@ -18,17 +18,24 @@ seo:
       <p class="">La tecnologia es la industria que mas rapido avanza, cambia y mejora. El ser un profesional en tecnologia exige hacer de la educación continua un habito y parte de nuestro tarbajo diario.</p>
       <p class="">Aqui encontraras ultimos cursos que he tomado.</p>
     </div>
-    <div class="mx-auto py-20">
-      <h2 class="text-left" style="font-family: 'DotGothic16';">Desarrollo Web</h2>
-      <div class="mx-auto max-w-screen-xl py-4 px-4 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
+    <div class="mx-auto py-10">
+      <h3 class="text-left">Desarrollo Web</h3>
+      <div class="mx-auto max-w-screen-xl p-2 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
       {% set certType = 'dev' %} {#select certificatedType dev mkt ent #}
       {% include "components/cert.njk" %}
       </div>
     </div>
-    <div class="mx-auto py-20">
-      <h2 class="text-left" style="font-family: 'DotGothic16';">Growth Marketing</h2>
-      <div class="mx-auto max-w-screen-xl py-4 px-4 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
+    <div class="mx-auto py-10">
+      <h3 class="text-left">Growth Marketing</h3>
+      <div class="mx-auto max-w-screen-xl p-2 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
       {% set certType = 'mkt' %}
+      {% include "components/cert.njk" %}
+      </div>
+    </div>
+    <div class="mx-auto py-10">
+      <h3 class="text-left">Emprendimiento y Desarrollo Personal</h3>
+      <div class="mx-auto max-w-screen-xl p-2 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
+      {% set certType = 'ent' %}
       {% include "components/cert.njk" %}
       </div>
     </div>

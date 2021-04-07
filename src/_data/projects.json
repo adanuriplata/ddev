@@ -44,7 +44,7 @@
   {
     "name" : "Ayuda Conektica",
     "description" : "Base de conocimiento con recursos de ayuda para clientes",
-    "technologies" : "JavaJavascript, React, Docusaurusscript",
+    "technologies" : "JavaScript, React, Docusaurus",
     "siteurl": "https://ayuda.conektica.com",
     "image": "basedeconocimiento-distordev.jpg"
   },

@@ -6,9 +6,14 @@
         "img": "fundamentosdejavascript.jpeg"
       },
       {
-        "name": "Fundamentos de Javascript",
-        "url": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
-        "img": "fundamentosdejavascript.jpeg"
+        "name": "MTA: Database Fundamentals",
+        "url": "#",
+        "img": "databasefundamentals.jpeg"
+      },
+      {
+        "name": "Curso Profesional de Git y GitHub",
+        "url": "https://platzi.com/p/fuzzJS/curso/1557-git-github/diploma/detalle/",
+        "img": "ProfesionaldeGityGitHub.jpeg"
       },
       {
         "name": "Programación orientada a objetos con PHP",
@@ -21,6 +26,28 @@
         "name": "Certificación de Publicidad en Búsqueda de Google Ads",
         "url": "https://skillshop.exceedlms.com/student/award/28155464",
         "img": "googleads.jpeg"
+      },
+      {
+        "name": "Certificación Google Analytics",
+        "url": "https://analytics.google.com/analytics/academy/certificate/f_qK2_zlQyOlU4xKl5yhhg",
+        "img": "googleanalytics.jpg"
+      },
+      {
+        "name": "Curso de SEO Técnico",
+        "url": "https://platzi.com/p/adanuriplata/curso/1992-seo-tecnico/diploma/detalle/",
+        "img": "seotecnico.jpg"
+      }
+    ],
+    "ent" : [
+      {
+        "name": "Engineering Management",
+        "url": "https://platzi.com/p/fuzzJS/curso/1732-eng-management/diploma/detalle/",
+        "img": "engineeringmanagement.jpeg"
+      },
+      {
+        "name": "Tecnología para Gerentes y Directores",
+        "url": "https://platzi.com/p/fuzzJS/curso/1882-tecnologia-gerentes/diploma/detalle/",
+        "img": "tecnologiaParaGerentesYdirectores.jpeg"
       }
     ]
   }

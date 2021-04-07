@@ -1,13 +1,13 @@
 {% macro certiIndividaul(certImg, certName, certUrl) %}
-          <div class="flex items-center text-center bg-gray-900 max-w-sm rounded my-4">
+          <div class="flex items-center text-left bg-gray-900 max-w-sm rounded my-4">
           <div class="w-4/12">
             <div class="rounded" style="max-width: 140px;">
               <img class="mx-auto" src="/assets/img/cert/{{ certImg }}" alt="">
             </div>
           </div>
-          <div class="flex w-8/12 flex-wrap justify-center">
-            <div class="w-full"><h4 class="text-sm font-sans font-regular m-2">{{ certName }}</h4></div>
-            <div class="w-full"><a href="{{ certUrl }}" type="button" class="focus:outline-none text-green-ddev text-xs py-1.5 px-3 rounded-md border border-green-ddev ddev-hover-button ">Ver certificado</a></div>
+          <div class="flex w-8/12 flex-wrap justify-center pl-4">
+            <div class="w-full"><h4 class="text-sm font-sans font-regular my-2">{{ certName }}</h4></div>
+            <div class="w-full"><a target="_blank" href="{{ certUrl }}" type="button" class="focus:outline-none text-green-ddev text-xs py-1.5 px-3 rounded-md border border-green-ddev ddev-hover-button ">Ver certificado</a></div>
           </div>
         </div>
 {% endmacro %}
@@ -18,6 +18,10 @@
   {% endfor %}
 {% elif certType == "mkt"  %}
   {% for certificado in certs.mkt %}
+    {{ certiIndividaul(certificado.img, certificado.name, certificado.url) }}
+  {% endfor %}
+{% elif certType == "ent" %}
+    {% for certificado in certs.ent %}
     {{ certiIndividaul(certificado.img, certificado.name, certificado.url) }}
   {% endfor %}
 {%endif%}
