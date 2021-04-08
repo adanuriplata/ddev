@@ -1,21 +1,21 @@
 {% set navPages = collections.all | eleventyNavigation %}
-<nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }} shadow relative">
-  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-    <div class="relative flex items-center justify-between h-16">
-      <div class="flex">
+<nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }} shadow relative md:border-2 border-4 border-gray-900">
+  <div class="max-w-full mx-auto px-6 lg:px-10">
+    <div class="relative flex items-center justify-between h-20">
+      <div class="flex items-center justify-between w-full">
         <div class="flex items-center">
           {# small logo hidden on md and above #}
           <a aria-label="Mobile Logo" href="/" class="block md:hidden {{ colors.logoCustom.mobile or colors.logoDefault.mobile }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Mobile Logo">
             {# {% svg "logo-mobile", "fill-current w-16 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Mobile Logo" %} #}
-            logo mobile
+            <img class="fill-current md:h-14 h-12" src="/assets/svg/logo.svg" alt="icono de {{site.platform}}">
           </a>
           {# large logo hidden on small, block on md #}
           <a aria-label="Desktop Logo" href="/" class="hidden md:block {{ colors.logoCustom.desktop or colors.logoDefault.desktop }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Desktop Logo">
-            {# {% svg "logo", "fill-current h-8 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Logo" %} #}
-            logo desktop
+            {# {% svg "distordev-svg", "fill-current h-8 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Logo" %} #}
+            <img class="md:h-14 h-12" src="/assets/svg/logo.svg" alt="icono de {{site.platform}}">
           </a>
         </div>
-        <div class="hidden sm:block sm:ml-6 sm:items-center">
+        <div class="hidden sm:block sm:ml-20 sm:items-center">
           <div class="flex space-x-4">
           {# 11ty Nav Plugin loop  #}
           {% for entry in navPages %}
