@@ -1,6 +1,11 @@
 {
     "dev" : [
       {
+        "name": "Fundamentos de Javascript",
+        "url": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
+        "img": "fundamentosdejavascript.jpeg"
+      },
+      {
         "name": "MTA: Database Fundamentals",
         "url": "#",
         "img": "databasefundamentals.jpeg"
@@ -16,6 +21,16 @@
         "img": "diploma-php-poo.jpeg"
       },
       {
+        "name": "Administración de bases de datos",
+        "url": "https://capacitateparaelempleo.org/verifica/u9upem262/",
+        "img": "administradordebasededatos.jpeg"
+      },
+      {
+        "name": "Gestión de Dependencias y Paquetes con NPM",
+        "url": "https://platzi.com/p/adanuriplata/curso/1763-npm/diploma/detalle/",
+        "img": "gestiondedependenciasypaquetesconnpm.jpeg"
+      },
+      {
         "name": "Asincronismo con Javascript",
         "url": "https://platzi.com/p/adanuriplata/curso/1789-asincronismo-js/diploma/detalle/",
         "img": "asincronismoconjavascript.jpeg"
@@ -26,9 +41,9 @@
         "img": "ecmascript6.jpg"
       },
       {
-        "name": "Fundamentos de Javascript",
-        "url": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
-        "img": "fundamentosdejavascript.jpeg"
+        "name": "Programador (orientado a objetos)",
+        "url": "https://capacitateparaelempleo.org/verifica/u9upem262/",
+        "img": "programadororientadoaobjetos.jpeg"
       },
       {
         "name": "Javascript Engine (v8)",
@@ -36,14 +51,14 @@
         "img": "javascriptenginev8.jpeg"
       },
       {
+        "name": "Manejo de datos con PHP",
+        "url": "https://platzi.com/p/adanuriplata/curso/2032-datos-php/diploma/detalle/",
+        "img": "manejodedatosenphp.jpeg"
+      },
+      {
         "name": "Curso esencial de Wordpress",
         "url": "https://platzi.com/p/fuzzJS/curso/1041-wordpress2016/diploma/detalle/",
         "img": "cursoesencialdewordpress.jpeg"
-      },
-      {
-        "name": "Gestión de Dependencias y Paquetes con NPM",
-        "url": "https://platzi.com/p/adanuriplata/curso/1763-npm/diploma/detalle/",
-        "img": "gestiondedependenciasypaquetesconnpm.jpeg"
       },
       {
         "name": "PHP con Composer",
@@ -76,6 +91,11 @@
         "name": "Curso de Email Marketing",
         "url": "https://platzi.com/p/fuzzJS/curso/117-email-marketing-2015/diploma/detalle/",
         "img": "cursodeemailmarketing.jpeg"
+      },
+      {
+        "name": "Curso de Marketing Digital",
+        "url": "#",
+        "img": "cursodemarketingdigital.jpeg"
       }
     ],
     "ent" : [

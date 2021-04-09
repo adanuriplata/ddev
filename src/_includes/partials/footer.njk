@@ -1,8 +1,13 @@
 <footer>
   <div class="{{ colors.footerCustom.barBg or colors.footerDefault.barBg }}">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+    <div class="max-w-screen-xl px-4 py-5 mx-auto sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <div class="container-Social md:order-2">
-        
+        <div class="mb-3 md:hidden">
+        <a aria-label="Desktop Logo" href="/" class=" mx-auto {{ colors.logoCustom.desktop or colors.logoDefault.desktop }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Desktop Logo">
+              {# {% svg "distordev-svg", "fill-current h-8 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Logo" %} #}
+          <img class="h-14 mx-auto" src="/assets/svg/logo.svg" alt="icono de {{site.platform}}">
+        </a>
+        </div>
         <div class="flex justify-center {{ colors.socialIconsCustom or colors.socialIconsDefault }}">
           {% if globals.g_showFooterSocialIcons %}
 
@@ -21,16 +26,27 @@
         </div>
         <div class="text-center mt-2 text-sm">@distordev</div>
       </div>
-      <div class="mt-8 md:mt-0 md:order-1">
-        <p class="text-center m-0 text-sm leading-6 {{ colors.footerCustom.text or colors.footerDefault.text }}">
+      <div class="mt-3 md:mt-0 md:order-1">
+        <div class="flex flex-wrap max-w-sm mx-auto justify-center">
+          <div class="md:block hidden">
+            <a aria-label="Desktop Logo" href="/" class=" mx-auto {{ colors.logoCustom.desktop or colors.logoDefault.desktop }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Desktop Logo">
+              {# {% svg "distordev-svg", "fill-current h-8 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Logo" %} #}
+              <img class="h-14" src="/assets/svg/logo.svg" alt="icono de {{site.platform}}">
+            </a>
+          </div>
+          <div>
+            <p class="text-center m-0 md:text-sm text-xs leading-6 {{ colors.footerCustom.text or colors.footerDefault.text }}">
+
           {# &copy; {{ build.timestamp | dateToFormat('yyyy') }}, {{ meta.siteName }} #}
-           &copy; 2021 | Diseño 🚀 Desarrollo - Adan Uri Plata {{ meta.siteName }} <br>
-          <span class="text-xs">🛠 con 
+           &copy; {% year %} | Diseño 🚀 Desarrollo - Adan Uri Plata <br>
+          <span class="text-xs text-left">🛠 con 
             <a href="https://www.11ty.dev/" traget="_blank">11ty, </a> 
             <a href="https://tailwindcss.com/" traget="_blank">Tailwind, </a> 
             <a href="https://github.com/alpinejs/alpine" traget="_blank">Alpine.Js</a> 
           </span>
         </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

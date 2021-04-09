@@ -1,8 +1,8 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-
   
 
   eleventyConfig.addPassthroughCopy("./src/assets/img");
@@ -12,7 +12,11 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addWatchTarget("./src/assets/");
 
-
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
   // eleventyConfig.addFilter("randomItem", (arr) => {
   //     arr.sort(() => {
   //       return 0.5 - Math.random();
@@ -27,7 +31,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.njk')
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
-  
   eleventyConfig.setDataDeepMerge(true)
 
     return {

@@ -56,7 +56,6 @@ module.exports = {
           'DotGothic16',
           'Arial',
           'sans-serif',
-
           '-apple-system',
           'BlinkMacSystemFont',
           '"Segoe UI"',
@@ -67,6 +66,10 @@ module.exports = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        serif: [
+          '"Red Hat Display"',
+          'Merriweather'
+        ]
       },
       opacity: {
         0: '0',
