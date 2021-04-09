@@ -1,11 +1,6 @@
 {
     "dev" : [
       {
-        "name": "Fundamentos de Javascript",
-        "url": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
-        "img": "fundamentosdejavascript.jpeg"
-      },
-      {
         "name": "MTA: Database Fundamentals",
         "url": "#",
         "img": "databasefundamentals.jpeg"
@@ -15,10 +10,50 @@
         "url": "https://platzi.com/p/fuzzJS/curso/1557-git-github/diploma/detalle/",
         "img": "ProfesionaldeGityGitHub.jpeg"
       },
-      {
+      { 
         "name": "Programación orientada a objetos con PHP",
         "url": "https://platzi.com/p/adanuriplata/curso/2034-php-poo/diploma/detalle/",
         "img": "diploma-php-poo.jpeg"
+      },
+      {
+        "name": "Asincronismo con Javascript",
+        "url": "https://platzi.com/p/adanuriplata/curso/1789-asincronismo-js/diploma/detalle/",
+        "img": "asincronismoconjavascript.jpeg"
+      },
+      {
+        "name": "Ecmascript 6",
+        "url": "https://platzi.com/p/adanuriplata/curso/1815-ecmascript-6/diploma/detalle/",
+        "img": "ecmascript6.jpg"
+      },
+      {
+        "name": "Fundamentos de Javascript",
+        "url": "https://platzi.com/p/adanuriplata/curso/1339-fundamentos-javascript/diploma/detalle/",
+        "img": "fundamentosdejavascript.jpeg"
+      },
+      {
+        "name": "Javascript Engine (v8)",
+        "url": "https://platzi.com/p/adanuriplata/curso/1798-javascript-navegador/diploma/detalle/",
+        "img": "javascriptenginev8.jpeg"
+      },
+      {
+        "name": "Curso esencial de Wordpress",
+        "url": "https://platzi.com/p/fuzzJS/curso/1041-wordpress2016/diploma/detalle/",
+        "img": "cursoesencialdewordpress.jpeg"
+      },
+      {
+        "name": "Gestión de Dependencias y Paquetes con NPM",
+        "url": "https://platzi.com/p/adanuriplata/curso/1763-npm/diploma/detalle/",
+        "img": "gestiondedependenciasypaquetesconnpm.jpeg"
+      },
+      {
+        "name": "PHP con Composer",
+        "url": "https://platzi.com/p/adanuriplata/curso/2024-php/diploma/detalle/",
+        "img": "phpconcomposer.jpeg"
+      },
+      {
+        "name": "Introducción a Frameworks de PHP",
+        "url": "https://platzi.com/p/adanuriplata/curso/2033-php-frameworks/diploma/detalle/",
+        "img": "introducciónaframeworksconphp.jpeg"
       }
     ],
     "mkt" : [
@@ -36,6 +71,11 @@
         "name": "Curso de SEO Técnico",
         "url": "https://platzi.com/p/adanuriplata/curso/1992-seo-tecnico/diploma/detalle/",
         "img": "seotecnico.jpg"
+      },
+      {
+        "name": "Curso de Email Marketing",
+        "url": "https://platzi.com/p/fuzzJS/curso/117-email-marketing-2015/diploma/detalle/",
+        "img": "cursodeemailmarketing.jpeg"
       }
     ],
     "ent" : [
@@ -48,6 +88,21 @@
         "name": "Tecnología para Gerentes y Directores",
         "url": "https://platzi.com/p/fuzzJS/curso/1882-tecnologia-gerentes/diploma/detalle/",
         "img": "tecnologiaParaGerentesYdirectores.jpeg"
+      },
+      {
+        "name": "Gestión Efectiva de Tiempo",
+        "url": "https://platzi.com/p/adanuriplata/curso/1749-gestion-tiempo/diploma/detalle/",
+        "img": "gestionefectivadetiempo.jpeg"
+      },
+      {
+        "name": "Organización y Productividad con Notion",
+        "url": "https://platzi.com/p/adanuriplata/curso/2226-notion/diploma/detalle/",
+        "img": "organizacionyproductividadconnotion.jpeg"
+      },
+      {
+        "name": "Oratoria y Hablar en Publico",
+        "url": "https://platzi.com/p/fuzzJS/curso/1285-hablar-en-publico/diploma/detalle/",
+        "img": "oratoriayhablarenpublico.jpeg"
       }
     ]
   }
