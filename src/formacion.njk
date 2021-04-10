@@ -11,33 +11,38 @@ seo:
   siteImage: aqui/la(imagen)
 ---
 
-<section class="md:py-8">
-  <div class="mx-auto px-3 sm:px-8 py-2 md:text-center">
-    <div class="max-w-lg mx-auto mt-6">
-      <h2 class="text-green-ddev font-mono">> <span class="text-white-l-ddev text-2xl py-2" style="font-family: 'DotGothic16';">Educación Continua</span></h2>
-      <p class="">La tecnologia es la industria que mas rapido avanza, cambia y mejora. El ser un profesional en tecnologia exige hacer de la educación continua un habito y parte de nuestro tarbajo diario.</p>
-      <p class="">Aqui encontraras ultimos cursos que he tomado.</p>
-    </div>
-    <div class="mx-auto py-10">
-      <h3 class="md:text-left text-xl m-3">Ingenieria Desarrollo de Software</h3>
-      <div class="mx-auto max-w-screen-xl md:pb-0 md:pt-4 p-3 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
+<section class="md:my-18 my-0">
+  <div>
+    <p class="md:text-sm text-xs font-mono my-1 text-green-ddev"> <span class="text-3xl">👨‍💻</span> La tecnología,</p>
+    <p class="md:text-4xl text-2xl leading-3 font-sans my-1"> industria que mas rapido</span><span class="text-green-ddev md:text-3xl text-xl"> avanza, cambia y mejora.</span></p>
+    <p class="md:text-base text-sm my-2">El ser un <span class="text-green-ddev"> profesional </span> en tecnología <br> exige hacer de la <span class="text-green-ddev"> educación </span> continua un habito y parte de nuestro <span class="text-green-ddev"> trabajo diario. </span></p> 
+  </div>
+</section>
+
+<section class=" mt-16 bg-gray-900">
+  <h3 class="md:text-2xl text-xl text-center font-serif font-normal py-3"> Listado de últimos <br> cursos aprobados y certificaciones:</h3>
+</section>
+
+<section class="mt-12">
+  <div class="my-16">
+    <h4 class="md:text-left text-xl my-3">👨‍🎓 Ingenieria Desarrollo de Software</h4>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-gray-900 md:p-2 pl-0">
       {% set certType = 'dev' %} {#select certificatedType dev mkt ent #}
       {% include "components/cert.njk" %}
-      </div>
     </div>
-    <div class="mx-auto py-10">
-      <h3 class="md:text-left text-xl m-3">Growth Marketing</h3>
-      <div class="mx-auto max-w-screen-xl md:pb-0 md:pt-4 p-3 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
-      {% set certType = 'mkt' %}
+  </div>
+  <div class="my-16">
+    <h4 class="md:text-left text-xl my-3">👨‍🎓 Marketing</h4>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-gray-900 md:p-2 pl-0">
+      {% set certType = 'mkt' %} {#select certificatedType dev mkt ent #}
       {% include "components/cert.njk" %}
-      </div>
     </div>
-    <div class="mx-auto py-10">
-      <h3 class="md:text-left text-xl m-3">Emprendimiento y Desarrollo Personal</h3>
-      <div class="mx-auto max-w-screen-xl md:pb-0 md:pt-4 p-3 bg-gray-800 hover:shadow-2xl rounded-lg flex flex-wrap justify-around">
-      {% set certType = 'ent' %}
+  </div>
+  <div class="my-16">
+    <h4 class="md:text-left text-xl my-3">👨‍🎓 Emprendimiento y Desarrollo Personal</h4>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 bg-gray-900 md:p-2 pl-0">
+      {% set certType = 'ent' %} {#select certificatedType dev mkt ent #}
       {% include "components/cert.njk" %}
-      </div>
     </div>
   </div>
 </section>

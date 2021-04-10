@@ -6,11 +6,10 @@
     <title>{{ seo.title or title }}  | {{ meta.siteName }}</title>
     <link rel="stylesheet" href="/assets/css/style.css"/>
     {# <link rel="alternate" type="application/atom+xml" title="RSS Feed for {{ meta.siteName }}" href="/feed.xml"/> #}
-    <script src="/js/alpine.js"></script>
+    <script src="/assets/js/alpine.js"></script>
     {%- include "partials/head.njk"%}
   </head>
   <body class="{{ colors.siteTextCustom or colors.siteTextDefault }} {{colors.siteBgDefault}}">
-    {# <div hidden>{% svgsprite %}</div> #}
     <div class="flex flex-col min-h-screen">
       {% include "components/nav.njk" %}
       {# If any frontmatter includes images.feature, insert it at the top of the page, 
@@ -22,15 +21,13 @@
       {% endif %}
 
       <div class="flex-grow max-w-full">
-        <main class="block py-12" id="content">
+        <main class="block pb-7" id="content">
           {{ content | safe }}
         </main>
       </div>
 
       {% include "partials/footer.njk" %}
     </div>
-
-    <script src="/assets/main.js" defer></script>
-
+    {# <script src="/assets/main.js" defer></script> #}
   </body>
 </html>

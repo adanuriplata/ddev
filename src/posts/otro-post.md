@@ -1,5 +1,7 @@
 ---
 title: Otro Post
+tags: 
+  - desarrollo web
 ---
 
 As easily as you can [manage colors](/2020/09/01/color-settings/), you can also control the display, or not, the SVG icons around the site.

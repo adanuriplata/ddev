@@ -1,17 +1,15 @@
 ---
 layout: base
 ---
-
-<article class="{{ globals.g_pageWidth }}">
-
-  {# <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1> #}
-
-  {# {% if seo.description %}
-    <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
-      {{ seo.description }}
+  {% if page.url == '/' %}
+  <header class="mb-8 py-5 bg-gray-900 hidden">
+  {%else%}
+  <header class=" mb-8 py-5 bg-gray-900">
+  {%endif%}
+    <div class="{{globals.g_pageWidth}}">
+      <h2 class="text-white-l-ddev md:text-3xl text-2xl" style="font-family: 'DotGothic16';"> <span class="text-green-ddev font-mono text-3xl">> </span>{{title}} _</h2>
     </div>
-  {% endif %} #}
-
+  </header>
+<article class="{{ globals.g_pageWidth }}">
   {{ content | safe }}
-
 </article>

@@ -1,8 +1,17 @@
 ---
 layout: base
 ---
+  {# <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1> #}
+
+  {# {% if seo.description %}
+    <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
+      {{ seo.description }}
+    </div>
+  {% endif %} #}
+
+
 <article class="{{ globals.g_pageWidthPost }}">
-  <header class="">
+  <header class="">  
     <div class="">
       <h1 class="text-4xl font-serif">{{title}}</h1>
     </div>
@@ -12,7 +21,7 @@ layout: base
       </div>
       <div class="text-sm flex items-center flex-wrap font-mono">
         <p class="my-0 w-full">Adan Uri Plata</p>
-        <p class="my-0 w-full">Oct-28-2020</p>
+        <time class="my-0 w-full">{{ page.date | postDate }}</time>
       </div>
     </div>
   </header>

@@ -14,7 +14,7 @@
             {# Display Social icons from _data/social.json  #}
             {% for site in social %}
               {% if site.url %}
-                <a aria-label="Link to {{ site.platform }}" alt="Link to {{ site.platform }}" class="hover:{{ colors.socialIconsHoverCustom or colors.socialIconsHoverDefault }}" target="_blank" href="{{ site.url | url }}">
+                <a aria-label="Link to {{ site.platform }}" class="hover:{{ colors.socialIconsHoverCustom or colors.socialIconsHoverDefault }}" target="_blank" href="{{ site.url | url }}">
                   {# {% svg site.platform, "mx-2 h-6 w-6 fill-current", site.platform, "footer" %} #}
                   <img class="mx-2 h-6 w-6" src="/assets/svg/{{site.platform}}.svg" alt="icono de {{site.platform}}">
                 
@@ -40,9 +40,9 @@
           {# &copy; {{ build.timestamp | dateToFormat('yyyy') }}, {{ meta.siteName }} #}
            &copy; {% year %} | Diseño 🚀 Desarrollo - Adan Uri Plata <br>
           <span class="text-xs text-left">🛠 con 
-            <a href="https://www.11ty.dev/" traget="_blank">11ty, </a> 
-            <a href="https://tailwindcss.com/" traget="_blank">Tailwind, </a> 
-            <a href="https://github.com/alpinejs/alpine" traget="_blank">Alpine.Js</a> 
+            <a href="https://www.11ty.dev/" target="_blank">11ty, </a> 
+            <a href="https://tailwindcss.com/" target="_blank">Tailwind, </a> 
+            <a href="https://github.com/alpinejs/alpine" target="_blank">Alpine.Js</a> 
           </span>
         </p>
           </div>

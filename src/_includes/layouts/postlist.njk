@@ -1,11 +1,19 @@
 
 {% for post in collections.posts %}
-      <div class="flex flex-wrap rounded">
-        <div class="mx-auto rounded-md"><img class="mx-auto rounded-md" src="/assets/img/2021/04/demo.jpg" alt=""></div>
+    {%if loop.first %}
+      <div class="flex flex-wrap rounded col-span-2">
+    {%else%}
+      <div class="flex flex-wrap rounded self-start">
+    {%endif%}
+        <div class="mx-auto rounded-md">
+          <a href="{{post.url}}"><img class="mx-auto rounded-md" src="/assets/img/2021/04/demo.jpg" alt=""></a>
+        </div>
         <div class="py-3">
-          <div class="flex justify-between text-sm font-mono text-green-ddev"><span>Marketing</span>   <span>{{ post.date | postDate }}</span></div>
-          <a href="{{post.url}}"> <h3 class="my-1 text-white-ddev hover:text-white-l-ddev text-xl">{{post.data.title}}</h3></a>
-          <p class="my-2 text-md font-serif">As easily as you can manage colors, you can also control the display, or not, the SVG icons.</p>
+          <div class="flex justify-between md:text-sm text-xs font-mono text-green-ddev flex-wrap">
+            <span>{{ post.data.tags | hideTagPosts }}</span>   <time>{{ post.date | postDate }}</time>
+          </div>
+          <a href="{{post.url}}"><h3 class="my-2 text-white-ddev hover:text-white-l-ddev md:text-2xl text-base">{{post.data.title}}</h3></a>
+          <p class="my-2 md:text-base text-sm font-serif ">As easily as you can manage colors, you can also control the display, or not, the SVG icons.</p>
         </div>
       </div>
 {% endfor %}

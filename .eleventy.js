@@ -3,20 +3,23 @@ const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  
 
   eleventyConfig.addPassthroughCopy("./src/assets/img");
   eleventyConfig.addPassthroughCopy("./src/assets/svg");
-  eleventyConfig.addPassthroughCopy({
-    './node_modules/alpinejs/dist/alpine.js': './js/alpine.js',
-  });
+  eleventyConfig.addPassthroughCopy({'./node_modules/alpinejs/dist/alpine.js': './assets/js/alpine.js',});
   eleventyConfig.addWatchTarget("./src/assets/");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-  
+
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
+
+  eleventyConfig.addFilter("hideTagPosts", tags => {
+    return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+  })
+
+
   // eleventyConfig.addFilter("randomItem", (arr) => {
   //     arr.sort(() => {
   //       return 0.5 - Math.random();
