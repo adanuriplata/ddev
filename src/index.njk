@@ -7,44 +7,40 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
   order: 1 # order to display in the nav (index = 1)
 ---
 {# START Quien soy #}
-<section class="pb-32 pt-0 md:pt-40 md:pb-40">
-  <div class="{{globals.g_pageWidthContainer}}">
+<section class="md:pt-40 pt-8 min-h-screen">
+  <div>
     <p class="text-green-ddev font-mono">Hola, soy</p>
     <h1 class="text-white-l-ddev text-6xl py-2" style="font-family: 'DotGothic16';">Adan Uri Plata</h1>
     <h2 class="text-3xl py-2">Construyo cosas para internet</h2>
       <div class="flex md:order-2 text-white-l-ddev align-middle">
         {% if globals.g_showFooterSocialIcons %}
-
-          {# Display Social icons from _data/social.json  #}
           {% for site in social %}
             {% if site.url %}
-              <a aria-label="Link to {{ site.platform }}" alt="Link to {{ site.platform }}" class="hover:{{ colors.socialIconsHoverCustom or colors.socialIconsHoverDefault }}" target="_blank" href="{{ site.url | url }}">
+              <a aria-label="Link to {{ site.platform }}" class="hover:{{ colors.socialIconsHoverCustom or colors.socialIconsHoverDefault }}" target="_blank" href="{{ site.url | url }}">
                 {# {% svg site.platform, "mx-2 h-6 w-6 fill-current", site.platform, "footer" %} #}
                 <img class="mx-2 h-5 w-5" src="/assets/svg/{{site.platform}}.svg" alt="icono de {{site.platform}}">
-                
               </a>
             {% endif %}
           {% endfor %}
-
         {% endif %}
         <span>@distordev</span>
       </div>
       <p>Soy un <span class="text-green-ddev">Desarrollador Web</span> y <span class="text-green-ddev">Growth Marketer</span> con amplia experiencia en Wordpress y Google Ads </p>
       <br>
-      <a href="#contacto" type="button" class="focus:outline-none text-green-ddev text-sm py-2.5 px-5 rounded-md border border-green-ddev ddev-hover-button ">Contactame ahora</a>
+      <a href="#contacto" class="focus:outline-none text-green-ddev text-sm py-2.5 px-5 rounded-md border border-green-ddev ddev-hover-button ">Contactame ahora</a>
   </div>
 </section>
 {# END Quien soy #}
 
 
 {# START ACERCA DE MI #}
-<section class="py-20 md:py-28">
-  <div class="{{globals.g_pageWidthContainer}}">
+<section class="md:mb-64 mb-36">
+  <div class="">
     <h2 class="text-green-ddev font-mono">> <span class="text-white-l-ddev text-2xl py-2" style="font-family: 'DotGothic16';">Acerca de mi</span></h2>
     <div class="md:flex my-12 justify-around">
       <div class="md:w-1/2 w-full divide-y divide-white-l-ddev p-4">
-        <div class="hero container max-w-screen-lg mx-auto pb-10 flex justify-center">
-          <img class="w-40 h-40 object-cover rounded-lg shadow-solid text-teal-400 ddev-hover-button" loading="lazy" src="https://media-exp1.licdn.com/dms/image/C5603AQFR93DWRj8Yvw/profile-displayphoto-shrink_400_400/0/1591367207702?e=1620864000&v=beta&t=nex3PSZLAtjAAO2sq_lVrSBbQGHW5ShXa2AP1QHkAc8" alt="Avatar of Tailwind CSS Design"/>
+        <div class="mx-auto mb-10 w-40 h-40">
+          <img class="rounded-lg shadow-solid text-teal-400 ddev-hover-button" loading="lazy" src="https://media-exp1.licdn.com/dms/image/C5603AQFR93DWRj8Yvw/profile-displayphoto-shrink_400_400/0/1591367207702?e=1620864000&v=beta&t=nex3PSZLAtjAAO2sq_lVrSBbQGHW5ShXa2AP1QHkAc8" alt="Acerca de mi Adan Uri Plata"/>
         </div>
         <div>
           <h5 class="text-center">Últimas tecnologias con las que he trabajado</h5>
@@ -78,22 +74,22 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 
 
 {# START EXPERIENCIA #}
-<section class="py-18 md:py-28">
-  <div class="{{globals.g_pageWidthContainer}}">
+<section class="md:mb-56 mb-36">
+  <div>
     <h2 class="text-green-ddev font-mono">> <span class="text-white-l-ddev text-2xl py-2" style="font-family: 'DotGothic16';">Experiencia</span></h2>
     <div class="md:flex my-5 justify-around items-center">
       <div class="md:w-1/2 w-full px-5">
-        <h4>🏢  Más de 4 años de experiencia en la industria.</h4> 
+        <h4><span class="md:text-3xl">🏢</span> Más de <span class="text-green-ddev"> 4 años </span> de  <span class="text-green-ddev">experiencia</span> en la industria.</h4> 
         <p>Desde 2017 de manera profesional desarrollando y administrando para la web, e-commerce, landing pages, estrategias SEO asi como Campañas Publicitarias Digitales.</p>
         <p>Trabajando para Agencias Creativas, sus Clientes y como Freelance.</p>
         <br>
         <a href="#contacto"><button type="button" class="focus:outline-none text-green-ddev text-sm py-2.5 px-5 rounded-md border border-green-ddev ddev-hover-button ">Iniciar Un Proyecto</button></a>
       </div>
-      <div class="md:w-1/2 w-full  px-5">
+      <div class="md:w-1/2 w-full px-5">
         <div class="py-12">
           <div class="flex items-center font-mono divide-x divide-green-500 my-5 md:flex-nowrap	flex-wrap	">
             <div class="md:w-4/12 w-full px-5">
-              <p class="text-xl md:text-base">Desarrollador Web 🧑‍💻</p>
+              <p class="text-xl md:text-base">Desarrollador Web 👨‍💻</p>
             </div>
             <div class="md:w-8/12 w-full px-5">
               <ul>
@@ -125,25 +121,25 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 {# END EXPERIENCIA #}
 
 {# START PROYECTOS #}
-<section class="flex-grow flex justify-center items-center">
-  <div class="mx-auto px-3 sm:px-8 py-2 text-center">
-    <div class="text-center max-w-lg mx-auto mt-6">
+<section class="md:mb-64 mb-36">
+  <div class="mx-auto text-center">
+    <header class="text-center mb-12">
       <h2 class="text-green-ddev font-mono">> <span class="text-white-l-ddev text-2xl py-2" style="font-family: 'DotGothic16';">Proyectos</span></h2>
-      <p class="">Algunos de los últimos proyectos que he realizado</p>
-    </div>
-    <div class="grid grid-cols-6 gap-3 items-start mt-8 mx-auto md:px-8 px-4"> {% include "components/project.njk" %} </div>
+      <p class="text-lg">Algunos de los últimos proyectos que he realizado</p>
+    </header>
+    <div class="grid md:grid-rows-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-6"> {% include "components/project.njk" %} </div>
   </div>
 </section>
 
 {# START CONTACTO #}
-<section class="py-20 md:py-24" id="contacto">
-  <div class="mx-auto px-3 sm:px-8 py-2 text-center">
-    <div class="text-center max-w-lg mx-auto mt-6">
+<section class="md:mb-32 mb-24" id="contacto">
+  <div class="mx-auto text-center">
+    <header class="text-center mb-12">
       <h2 class="text-green-ddev font-mono">> <span class="text-white-l-ddev text-2xl py-2" style="font-family: 'DotGothic16';">Contacto</span></h2>
-      <p class="">Iniciemos una conversación, respondere lo antes posible</p>
-    </div>
-    <div class="mx-auto py-20">
-      <div class="mx-auto max-w-screen-sm py-8 px-8 bg-gray-900 hover:shadow-2xl rounded-lg">
+      <p class="text-lg">Iniciemos una conversación, respondere lo antes posible</p>
+    </header>
+    <div class="mx-auto">
+      <div class="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg">
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
         <script>
           hbspt.forms.create({
