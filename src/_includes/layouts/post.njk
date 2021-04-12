@@ -1,34 +1,31 @@
 ---
 layout: base
 ---
-  {# <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1> #}
-
-  {# {% if seo.description %}
-    <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
-      {{ seo.description }}
-    </div>
-  {% endif %} #}
-
-
-<article class="{{ globals.g_pageWidthPost }}">
-  <header class="">  
-    <div class="">
-      <h1 class="text-4xl font-serif">{{title}}</h1>
-    </div>
-    <div class="flex items-center max-w-sm mt-5">
-      <div class="mr-5">
-        <img class="w-10 h-10 object-cover rounded-full shadow-solid text-teal-400 ddev-hover-button" loading="lazy" src="https://media-exp1.licdn.com/dms/image/C5603AQFR93DWRj8Yvw/profile-displayphoto-shrink_400_400/0/1591367207702?e=1620864000&v=beta&t=nex3PSZLAtjAAO2sq_lVrSBbQGHW5ShXa2AP1QHkAc8" alt="Foto de autor Adan Uri Plata"/>
+  <header class=" mb-8 py-5 bg-gray-900">
+    <div class="{{globals.g_pageWidthPost}}">
+      <h1 class="text-white-l-ddev md:text-4xl text-3xl font-serif"> <span class="text-green-ddev font-mono text-3xl">> </span>{{title}} _</h1>
+      <div class="flex items-center max-w-sm mt-6">
+        <div class="mr-5">
+          <img class="w-10 h-10 object-cover rounded-full shadow-solid text-teal-400 ddev-hover-button" loading="lazy" src="https://media-exp1.licdn.com/dms/image/C5603AQFR93DWRj8Yvw/profile-displayphoto-shrink_400_400/0/1591367207702?e=1620864000&v=beta&t=nex3PSZLAtjAAO2sq_lVrSBbQGHW5ShXa2AP1QHkAc8" alt="Foto de autor Adan Uri Plata"/>
+        </div>
+        <div class="text-sm flex items-center flex-wrap font-mono">
+          <p class="my-0 w-full">Adan Uri Plata</p>
+          <span class="my-0 w-full">{{ page.date | postDate }}</span>
+          <div>
+          {# {% include "components/socialshare.njk" %} #}
+        </div>
       </div>
-      <div class="text-sm flex items-center flex-wrap font-mono">
-        <p class="my-0 w-full">Adan Uri Plata</p>
-        <time class="my-0 w-full">{{ page.date | postDate }}</time>
-      </div>
+    </div>
     </div>
   </header>
-  <section class="mt-10">
-    {{ content | safe }}
-  </section>
+<article class="{{ globals.g_pageWidthPost }} {{ globals.g_fontSizePost }}">
+    <div class="mx-auto rounded-md">
+      <img class="mx-auto rounded-md" src="/assets/img/{{ cover }}" alt="">
+    </div>
+  {{ content | safe }}
   <div id="disqus_thread"></div>
+</article>
+
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -47,4 +44,17 @@ layout: base
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</article>
+
+
+
+
+
+  {# <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1> #}
+
+  {# {% if seo.description %}
+    <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
+      {{ seo.description }}
+    </div>
+  {% endif %} #}
+
+

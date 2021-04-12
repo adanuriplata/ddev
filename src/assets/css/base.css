@@ -43,11 +43,115 @@ body {
     @apply text-sm;
   }
   
-  blockquote {
-    @apply bg-grey-light rounded-lg px-6 py-4 my-4 italic;
+ 
+
+  .markdown {
+    @apply leading-relaxed md:text-xl text-lg font-serif;
   }
   
-  blockquote p {
-    @apply mt-2;
+
+  
+  /* Headers */
+  .markdown h2 {
+    @apply text-2xl mt-14 font-semibold text-white-l-ddev font-sans;
+  }
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    @apply text-xl mt-12 font-semibold text-white-l-ddev;
   }
   
+  @screen sm {
+    .markdown h1,
+    .markdown h2 {
+      @apply text-3xl;
+    }
+    .markdown h3,
+    .markdown h4,
+    .markdown h5,
+    .markdown h6 {
+      @apply text-2xl;
+    }
+  }
+  
+  /* Links */
+  /* .markdown a {
+    @apply text-blue-600;
+  } */
+  .markdown a:hover {
+    @apply underline;
+  }
+  /* Paragraph */
+  .markdown p {
+    @apply mb-4;
+  }
+  /* Lists */
+  .markdown ul,
+  .markdown ol {
+    @apply mb-4 ml-8;
+  }
+  .markdown li > p,
+  .markdown li > ul,
+  .markdown li > ol {
+    @apply mb-0;
+  }
+  .markdown ol {
+    @apply list-decimal;
+  }
+  .markdown ul {
+    @apply list-disc;
+  }
+  /* Blockquotes */
+  .markdown blockquote {
+    @apply px-2 md:py-8 py-6 ml-6 md:mr-4 mr-0 bg-gray-900 mb-4 border-l-4 border-green-ddev italic md:text-lg text-base;
+  }
+  .markdown blockquote > p {
+    @apply my-0 pl-4;
+  }
+  /* Tables */
+  .markdown td,
+  .markdown th {
+    @apply px-2 py-1 border border-gray-400;
+  }
+  .markdown tr:nth-child(odd) {
+    @apply bg-gray-900;
+  }
+  .markdown table {
+    @apply mb-6;
+  }
+
+  .markdown h2:before, .markdown h3:before, .markdown h4:before, .markdown h5:before, .markdown h6:before {
+    content: "#";
+    opacity: .9;
+    margin-right: 12px;
+  }
+
+  .markdown strong {
+    @apply text-white-l-ddev;
+  }
+
+  .markdown code {
+    background: #272822;
+    @apply text-white-l-ddev;
+    padding: 0 6px;
+    border-radius: 4px;
+    margin: 0 4px;
+  }
+
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+
+  .markdown img {
+    @apply mx-auto rounded-md;
+  }
+
+  /* Wrap any inline highlights `that are really long`, but don't modify
+     the setting for codeblocks (inside ```), which are rendered in as:
+     <pre><code>...
+  */
+  .markdown :not(pre) > code.language-text {
+    white-space: pre-line;
+  }
+  /* purgecss end ignore */
