@@ -13,7 +13,7 @@
             <span>{{ post.data.tags | hideTagPosts }}</span>   <time>{{ post.date | postDate }}</time>
           </div>
           <a href="{{post.url}}"><h3 class="my-2 text-white-ddev hover:text-white-l-ddev md:text-2xl text-base">{{post.data.title}}</h3></a>
-          <p class="my-2 md:text-base text-sm font-serif ">As easily as you can manage colors, you can also control the display, or not, the SVG icons.</p>
+          <p class="my-2 md:text-base text-sm font-serif ">{{post.data.excerpt}}</p>
         </div>
       </div>
 {% endfor %}

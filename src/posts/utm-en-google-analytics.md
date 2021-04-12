@@ -1,8 +1,11 @@
 ---
 title: UTM - Mide todas tus acciones de mkt digital y organízalo en Analytics 
 cover: 2021/04/utmgoogleanalytics.jpeg
+excerpt: Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post te mostrarte los beneficios y como con 2 minutos ... 
+seo:
+  siteImage: 2021/04/utmgoogleanalytics.jpeg 
 tags: 
-  - desarrollo web
+  - Google Analytics, Ads
 ---
 
 Una de las preguntas que me hacen frecuentemente son: 
@@ -18,7 +21,7 @@ Muchos profesionales del marketing digital aun desconocen el poderoso uso de las
 
 > UTM en marketing digital es la forma de darle mas información acerca de tus campañas a Google Analytics.
 
-- Hey! Google Analytics tú lo sabes todo pero cuando den clic en este enlace: marcalo como enviado desde la campaña regreso a clases y ponle que fue un banner azul con la imagen de 2 niños felices publicado en instagram.
+- Hey! Google Analytics tú lo sabes todo pero cuando den clic en este enlace: márcalo como enviado desde la campaña regreso a clases y ponle que fue un banner azul con la imagen de 2 niños felices publicado en instagram.
 
 ## Exactamente que es UTM
 
@@ -109,4 +112,4 @@ Listo ahora puedes colocar esa url en el enlace de tus campañas y cuando tus us
 
 Coméntanos que otra herramienta conoces de medición y si te fue util comparte esta información.
 
-#elConocimientoNosHaceLibres
+*#elConocimientoNosHaceLibres*

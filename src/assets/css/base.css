@@ -131,12 +131,17 @@ body {
     @apply text-white-l-ddev;
   }
 
+  .markdown em {
+    @apply text-green-ddev;
+  }
+
   .markdown code {
     background: #272822;
     @apply text-white-l-ddev;
     padding: 0 6px;
     border-radius: 4px;
     margin: 0 4px;
+    overflow-x: scroll;
   }
 
   .table-wrapper {
