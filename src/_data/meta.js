@@ -1,5 +1,5 @@
 module.exports = {
-	siteURL: 'http://localhost:8080',
+	siteURL: 'https:distor.dev',
 	siteName: "Distor Dev | Adan Uri Plata Desarrollador Web en Puebla México",
 	siteDescription:
 		'Desarrollor Web y Growth Marketer',
