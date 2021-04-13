@@ -8,10 +8,9 @@
 
 // const defaultTheme = require('tailwindcss/defaultTheme');
 //  const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   purge: {
-    enabled: false,
+    enabled: ((process.env.ELEVENTY_ENV === 'prod') ? true : false),
     content: ['./src/**/*.html',
     './src/**/*.njk',
     './src/**/*.md',

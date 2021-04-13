@@ -18,6 +18,7 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
+  // clean css inline for code in markdown 
   eleventyConfig.addFilter("cssmin", (code) => {
     return new cleanCSS({}).minify(code).styles;
   })

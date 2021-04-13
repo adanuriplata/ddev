@@ -4,10 +4,12 @@
   "description": "Mi sitio web Personal",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build:clean && npm run build:css && eleventy  --serve",
-    "build": "npm run build:* && eleventy",
+    "start": "npm run dev:clean && npm run dev:css && eleventy  --serve",
+    "dev:clean": "rimraf public",
+    "dev:css": "postcss src/assets/css/style.css -o public/assets/css/style.css",
+    "prod": "npm run build:clean && npm run build:css && ELEVENTY_ENV=prod eleventy",
     "build:clean": "rimraf public",
-    "build:css": "postcss src/assets/css/style.css -o public/assets/css/style.css",
+    "build:css": "ELEVENTY_ENV=prod postcss src/assets/css/style.css -o public/assets/css/style.css",
     "eleventy": "eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +23,7 @@
     "alpinejs": "^2.8.2",
     "autoprefixer": "^10.2.5",
     "clean-css": "^5.1.2",
+    "dotenv": "^8.2.0",
     "luxon": "^1.26.0",
     "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",

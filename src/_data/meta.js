@@ -3,7 +3,7 @@ module.exports = {
 	siteName: "Distor Dev | AdanUriPlata Website",
 	siteDescription:
 		'Desarrollor Web y Growth Marketer',
-	siteImage: '/assets/images/site/default.png',
+	siteImage: 'site/og-image.png',
 	lang: 'es',
 	locale: 'es_MX',
 	authorName: 'Adan Uri Plata',
