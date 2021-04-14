@@ -23,6 +23,7 @@
     "alpinejs": "^2.8.2",
     "autoprefixer": "^10.2.5",
     "clean-css": "^5.1.2",
+    "cssnano": "^5.0.1",
     "dotenv": "^8.2.0",
     "luxon": "^1.26.0",
     "postcss": "^8.2.9",

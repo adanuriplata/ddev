@@ -1,6 +1,6 @@
 {% for project in projects%}
     <div class="hover:bg-gray-800 bg-gray-900 shadow-lg rounded-lg p-8 md:mx-0 mx-5 rounded-lg hover:shadow-solid hover:text-green-ddev ddev-hover-project">
-      <div class="mx-auto rounded-md"><img class="mx-auto rounded-md" src="assets/img/projects/{{ project.image }}" alt="proyecto {{ project.name }}"></div>
+      <div class="mx-auto rounded-md"><img class="mx-auto rounded-md" src="assets/img/projects/{{ project.image }}" alt="proyecto {{ project.name }} " loading="lazy"></div>
       <div class="mt-6 block mx-auto">
         <h5 class="text-center md:text-2xl text-xl">{{ project.name }}</h5>
       </div>
