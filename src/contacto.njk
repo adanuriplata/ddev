@@ -20,14 +20,17 @@ seo:
         <p>También estoy en redes sociales como @distordev</p>
       </div>
           <div class="mx-auto">
-      <div class="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg">
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" async></script>
+      <div class="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg" id="divFormHolder">
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" defer></script>
         <script>
-          hbspt.forms.create({
-	        region: "na1",
-	        portalId: "5518085",
-	        formId: "e66095e2-568a-4ddc-9fa3-8c9563e8571c"
-          });
+          window.onload = function() {
+            hbspt.forms.create({
+	          region: "na1",
+	          portalId: "5518085",
+	          formId: "e66095e2-568a-4ddc-9fa3-8c9563e8571c",
+            target: "#divFormHolder",
+            });
+          };
         </script>
       </div>
     </div>

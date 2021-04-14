@@ -43,7 +43,7 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
     <div class="md:flex my-12 justify-around">
       <div class="md:w-1/2 w-full divide-y divide-white-l-ddev p-4">
         <div class="mb-10">
-          <img class="mx-auto rounded-lg shadow-solid text-teal-400 ddev-hover-button w-40 h-40" loading="lazy" src="https://media-exp1.licdn.com/dms/image/C5603AQFR93DWRj8Yvw/profile-displayphoto-shrink_400_400/0/1591367207702?e=1620864000&v=beta&t=nex3PSZLAtjAAO2sq_lVrSBbQGHW5ShXa2AP1QHkAc8" alt="Acerca de mi Adan Uri Plata"/>
+          <img class="mx-auto rounded-lg shadow-solid text-teal-400 ddev-hover-button w-40 h-40" loading="lazy" src="/assets/img/site/avatar-adan-uri.jpeg" alt="Acerca de mi Adan Uri Plata"/>
         </div>
         <div>
           <h5 class="text-center">Últimas tecnologías con las que he trabajado</h5>
@@ -144,14 +144,17 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
       <p>También estoy en redes sociales como @distordev</p>
     </header>
     <div class="mx-auto">
-      <div class="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg">
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" sync></script>
+      <div class="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg" id="divFormHolder">
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js" defer></script>
         <script>
-          hbspt.forms.create({
-	        region: "na1",
-	        portalId: "5518085",
-	        formId: "e66095e2-568a-4ddc-9fa3-8c9563e8571c"
-          });
+          window.onload = function() {
+            hbspt.forms.create({
+	          region: "na1",
+	          portalId: "5518085",
+	          formId: "e66095e2-568a-4ddc-9fa3-8c9563e8571c",
+            target: "#divFormHolder",
+            });
+          };
         </script>
       </div>
     </div>
