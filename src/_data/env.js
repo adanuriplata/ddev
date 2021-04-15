@@ -14,5 +14,8 @@ module.exports = {
   },
   tracking: {
     gtag:'G-87HXTP0SFH'
+  },
+  ads: {
+    capub: 'ca-pub-3141622054291429'
   }
 }
