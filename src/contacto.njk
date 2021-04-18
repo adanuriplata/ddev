@@ -14,40 +14,35 @@ seo:
 <section>
   <div>
     <div class="md:flex md:justify-evenly">
-      <div class="py-10 px-5" id="hubspot_thread">
+      <div class="py-10 px-5" id="hubspotWrap">
         <h2>¿Listo para hacer crecer tu negocio?</h2>
         <p>Platiquemos, por correo <a href="mailto:adanuriplata@gmail.com"> adanuriplata@gmail.com</a>  o formulario.</p>
         <p>También estoy en redes sociales como @distordev</p>
       </div>
           <div class="mx-auto">
       <div class="mx-auto max-w-screen-sm md:p-12 p-5 bg-gray-900 hover:shadow-2xl rounded-lg" id="divFormHolder">
-        <script>
-var hubspot_observer = new IntersectionObserver(function(entries) {
-    // comments section reached
-    // start loading hubspot now
-    if(entries[0].isIntersecting) {
-        (function() {
-            var d = document, s = d.createElement('script');
-            s.src = '//js.hsforms.net/forms/shell.js';
-            s.charset = 'utf-8';
-            s.type = 'text/javascript';
-            if((d.head).appendChild(s)) {
-              setTimeout(function(){
+      <script>
+        const hubspotObserver = new IntersectionObserver( (entries) => {
+	        if(entries[0].isIntersecting) {
+            const s = document.createElement('script');
+				    s.src = '//js.hsforms.net/forms/shell.js';
+				    s.charset = 'utf-8';
+				    s.type = 'text/javascript';
+				    if ((document.head).appendChild(s)) {
+						  setTimeout(function(){
                 hbspt.forms.create({
-	                region: "na1",
-	                portalId: "5518085",
-	                formId: "e66095e2-568a-4ddc-9fa3-8c9563e8571c",
-                  target: "#divFormHolder"
-                }); 
-              }, 300);
-            }
-        })();
-        // once executed, stop observing
-        hubspot_observer.disconnect();
-    }
-}, { threshold: [0] });
-hubspot_observer.observe(document.querySelector("#hubspot_thread"));
-</script>
+								  region: "na1",
+								  portalId: "5518085",
+								  formId: "e66095e2-568a-4ddc-9fa3-8c9563e8571c",
+							    target: "#divFormHolder"
+								}); 
+              }, 350);
+						}
+				  hubspotObserver.disconnect();
+        }
+        }, { treshold: [0] } ); 
+        hubspotObserver.observe(document.querySelector("#hubspotWrap"));
+      </script>
       </div>
     </div>
     </div>

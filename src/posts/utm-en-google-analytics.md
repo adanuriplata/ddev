@@ -24,7 +24,7 @@ Muchos profesionales del marketing digital aun desconocen el poderoso uso de las
 
 - Hey! Google Analytics tú lo sabes todo pero cuando den clic en este enlace: márcalo como enviado desde la campaña regreso a clases y ponle que fue un banner azul con la imagen de 2 niños felices publicado en instagram.
 
-## Exactamente que es UTM
+## Técnicamente que es UTM
 
 Poniéndonos en *technical mode* las utm son variables con información que viajan través de la url. Cuando enviamos una petición al servidor usamos una dirección url por ejemplo:
 
