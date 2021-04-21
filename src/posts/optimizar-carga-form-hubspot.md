@@ -9,7 +9,7 @@ tags:
   - Javascript, Optimización web, SEO
 ---
 
-Hubspot es sin duda uno de los mejores CRM´s que existen en el mercado actualmente y una herramienta muy utilizada en el marketing digital pero... 
+Hubspot es sin duda uno de los mejores CRM que existen en el mercado actualmente y una herramienta muy utilizada en el marketing digital pero... 
 Incrustar uno de sus forms también ayudan a que nuestra pagina se ponga lenta.
 
 Y si decides hacer un test en Google Speed te saldrá que ese código de hubspot que incrustaste es la causa de tener muchos puntos menos.
