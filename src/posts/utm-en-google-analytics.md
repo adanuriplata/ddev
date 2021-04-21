@@ -2,7 +2,7 @@
 title: UTM - Mide todas tus acciones de mkt digital y organízalo en Analytics 
 cover: 2021/04/utmgoogleanalytics.jpeg
 excerpt: Mide todas tus acciones de mkt digital y organízalo en Analytics | Muchos profesionales del marketing digital aun desconocen el poderoso uso de las utm. En este post te mostrarte los beneficios y como con 2 minutos ...
-date: Created
+date: 2021-04-18
 seo:
   siteImage: 2021/04/utmgoogleanalytics.jpeg
   title: Medir campañas digitales con UTM Google Analytics

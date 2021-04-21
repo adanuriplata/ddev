@@ -2,7 +2,7 @@
 title: Optimiza la carga del form de Hubspot
 cover: 2021/04/intersectionObserver-min.jpeg
 excerpt:  Mejora la carga de tu sitio web evitando la carga del form de hubspot | Quita los recursos JavaScript que no se usen con Intersection Observer
-date: Created
+date: 2021-04-21
 seo:
   siteImage: 2021/04/intersectionObserver-min.jpeg
   title: Optimiza la carga del form de Hubspot en tu sitio web
